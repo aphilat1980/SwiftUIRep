@@ -9,29 +9,49 @@ import SwiftUI
 
 struct SettingView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    @Binding var titleOn: Bool
+    
+    @State private var isChanging = false
     @State private var date = Date()
     @State private var toggleOn = false
     @State private var numberOfLikes = 0
-    @State private var sliderValue = 10.0
+    @Binding var rowHeight: Double
     
     var body: some View {
         NavigationView {
             Form {
+                
                 Section {
                     Text("Установите настройки приложения")
+                    Text(colorScheme == .dark ? "Dark Theme enabled" : "Light Theme enabled")
                     DatePicker("Дата", selection: $date, displayedComponents: .date)
                 } header: {
                     Text("Основные настройки")
                 }
                 
                 Section {
-                    Toggle("Показывать титры", isOn: $toggleOn)
-                    Stepper("Количество лайков", value: $numberOfLikes, in: 0...1000)
-                    Text("Количество лайков равно  \(numberOfLikes)")
-                    Slider(value: $sliderValue, in: 0...100)
+                    Toggle("Заголовок InfoView", isOn: $titleOn.animation())
+                    if titleOn {
+                        Text("Navigation Title enabled")
+                    }
                 } header: {
-                    Text("Второстепенные настройки")
+                    Text("Вспомогательные настройки")
                 }
+                
+                Section {
+                    
+                    Slider(value: $rowHeight, in: 60...100) {changing in
+                        isChanging = changing
+                    }
+                    if isChanging {
+                        InfoRow(post: database[0])
+                            .frame(height: rowHeight)
+                    }
+                } header: {
+                    Text("Настройка высоты строки в таблице")
+                }
+                
             }
             .navigationTitle("Settings")
         }
@@ -40,6 +60,6 @@ struct SettingView: View {
 
 struct SettingView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingView()
+        SettingView(titleOn: .constant(false), rowHeight: .constant(60.0))
     }
 }

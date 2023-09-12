@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct InfoView: View {
+    
+    @Binding var titleOn: Bool
+    @Binding var rowHeight:Double
+    
     var body: some View {
         
         NavigationView {
@@ -18,10 +22,11 @@ struct InfoView: View {
                     InfoDetails(post: post)
                 } label: {
                     InfoRow(post: post)
+                        .frame(height: rowHeight)
                 }
                 
             }
-            .navigationTitle("Films List")
+            .navigationTitle(titleOn ? "Films List" : "")
             .listStyle(.plain)
         }
     }
@@ -29,6 +34,6 @@ struct InfoView: View {
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView()
+        InfoView(titleOn: .constant(true), rowHeight: .constant(60.0))
     }
 }
