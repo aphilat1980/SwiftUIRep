@@ -7,11 +7,22 @@
 
 import SwiftUI
 
-struct Post: Identifiable {
+struct Film: Identifiable {
     
     var id: Int
     var title: String
     var description: String
     var image: Image
+    var director: Person
+    var actors: [Person]
+    var trailerName: String
+    
+}
+
+struct Person: Identifiable {
+    
+    var id: Int
+    var name: String
+    var foto: Image
     
 }

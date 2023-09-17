@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InfoDetails: View {
-    var post: Post
+    var post: Film
     
     var body: some View {
         ScrollView {
