@@ -11,6 +11,7 @@ struct InfoView: View {
     
     @Binding var titleOn: Bool
     @Binding var rowHeight:Double
+    @Binding var film: Film
     
     var body: some View {
         
@@ -20,6 +21,9 @@ struct InfoView: View {
                 
                 NavigationLink {
                     InfoDetails(post: post)
+                        .onAppear {
+                            self.film = post
+                        }
                 } label: {
                     InfoRow(post: post)
                         .frame(height: rowHeight)
@@ -34,6 +38,6 @@ struct InfoView: View {
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView(titleOn: .constant(true), rowHeight: .constant(60.0))
+        InfoView(titleOn: .constant(true), rowHeight: .constant(60.0), film: .constant(database[0]))
     }
 }

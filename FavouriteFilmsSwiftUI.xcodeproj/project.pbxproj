@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172B89D42AB475EE00445064 /* pulp_fiction.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 172B89D32AB475EE00445064 /* pulp_fiction.mp4 */; };
+		172B89D62AB47EA200445064 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B89D52AB47EA200445064 /* PersonView.swift */; };
+		172B89D82AB483C400445064 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B89D72AB483C400445064 /* SwiftUIView.swift */; };
+		172B89DA2AB48FEC00445064 /* twin_peaks.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 172B89D92AB48FEC00445064 /* twin_peaks.mp4 */; };
+		172B89DC2AB4929F00445064 /* forrest_gump.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 172B89DB2AB4929F00445064 /* forrest_gump.mp4 */; };
+		172B89DE2AB4936A00445064 /* old_boy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 172B89DD2AB4936A00445064 /* old_boy.mp4 */; };
+		172B89E02AB494AB00445064 /* batman_begins.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 172B89DF2AB494AB00445064 /* batman_begins.mp4 */; };
+		17321A712AB5693600B83EF6 /* PhotoPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17321A702AB5693600B83EF6 /* PhotoPersonView.swift */; };
 		173623D02AAE253F00BB7F4D /* FavouriteFilmsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623CF2AAE253F00BB7F4D /* FavouriteFilmsSwiftUIApp.swift */; };
 		173623D22AAE253F00BB7F4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623D12AAE253F00BB7F4D /* ContentView.swift */; };
 		173623D42AAE254000BB7F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173623D32AAE254000BB7F4D /* Assets.xcassets */; };
@@ -16,11 +24,19 @@
 		173623E22AAE2B4C00BB7F4D /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623E12AAE2B4C00BB7F4D /* InfoRow.swift */; };
 		173623E42AAE2E5600BB7F4D /* InfoDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623E32AAE2E5600BB7F4D /* InfoDetails.swift */; };
 		173623E62AAE348B00BB7F4D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623E52AAE348B00BB7F4D /* InfoView.swift */; };
-		173623E82AAF3A4300BB7F4D /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623E72AAF3A4300BB7F4D /* HelloView.swift */; };
+		173623E82AAF3A4300BB7F4D /* FilmTrailerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623E72AAF3A4300BB7F4D /* FilmTrailerView.swift */; };
 		173623EA2AAF3AB900BB7F4D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173623E92AAF3AB900BB7F4D /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172B89D32AB475EE00445064 /* pulp_fiction.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pulp_fiction.mp4; sourceTree = "<group>"; };
+		172B89D52AB47EA200445064 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
+		172B89D72AB483C400445064 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		172B89D92AB48FEC00445064 /* twin_peaks.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = twin_peaks.mp4; sourceTree = "<group>"; };
+		172B89DB2AB4929F00445064 /* forrest_gump.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = forrest_gump.mp4; sourceTree = "<group>"; };
+		172B89DD2AB4936A00445064 /* old_boy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = old_boy.mp4; sourceTree = "<group>"; };
+		172B89DF2AB494AB00445064 /* batman_begins.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = batman_begins.mp4; sourceTree = "<group>"; };
+		17321A702AB5693600B83EF6 /* PhotoPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPersonView.swift; sourceTree = "<group>"; };
 		173623CC2AAE253F00BB7F4D /* FavouriteFilmsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavouriteFilmsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		173623CF2AAE253F00BB7F4D /* FavouriteFilmsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteFilmsSwiftUIApp.swift; sourceTree = "<group>"; };
 		173623D12AAE253F00BB7F4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,7 +47,7 @@
 		173623E12AAE2B4C00BB7F4D /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		173623E32AAE2E5600BB7F4D /* InfoDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoDetails.swift; sourceTree = "<group>"; };
 		173623E52AAE348B00BB7F4D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		173623E72AAF3A4300BB7F4D /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		173623E72AAF3A4300BB7F4D /* FilmTrailerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTrailerView.swift; sourceTree = "<group>"; };
 		173623E92AAF3AB900BB7F4D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +62,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		172B89E12AB4965C00445064 /* Video Data */ = {
+			isa = PBXGroup;
+			children = (
+				172B89D32AB475EE00445064 /* pulp_fiction.mp4 */,
+				172B89D92AB48FEC00445064 /* twin_peaks.mp4 */,
+				172B89DD2AB4936A00445064 /* old_boy.mp4 */,
+				172B89DF2AB494AB00445064 /* batman_begins.mp4 */,
+				172B89DB2AB4929F00445064 /* forrest_gump.mp4 */,
+			);
+			path = "Video Data";
+			sourceTree = "<group>";
+		};
 		173623C32AAE253F00BB7F4D = {
 			isa = PBXGroup;
 			children = (
@@ -70,8 +98,12 @@
 				173623E12AAE2B4C00BB7F4D /* InfoRow.swift */,
 				173623E32AAE2E5600BB7F4D /* InfoDetails.swift */,
 				173623E52AAE348B00BB7F4D /* InfoView.swift */,
-				173623E72AAF3A4300BB7F4D /* HelloView.swift */,
+				173623E72AAF3A4300BB7F4D /* FilmTrailerView.swift */,
+				17321A702AB5693600B83EF6 /* PhotoPersonView.swift */,
+				172B89D72AB483C400445064 /* SwiftUIView.swift */,
+				172B89D52AB47EA200445064 /* PersonView.swift */,
 				173623E92AAF3AB900BB7F4D /* SettingView.swift */,
+				172B89E12AB4965C00445064 /* Video Data */,
 				173623EB2AAF6A7700BB7F4D /* DataModel */,
 				173623D32AAE254000BB7F4D /* Assets.xcassets */,
 				173623D52AAE254000BB7F4D /* Preview Content */,
@@ -154,7 +186,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				172B89E02AB494AB00445064 /* batman_begins.mp4 in Resources */,
+				172B89DC2AB4929F00445064 /* forrest_gump.mp4 in Resources */,
 				173623D72AAE254000BB7F4D /* Preview Assets.xcassets in Resources */,
+				172B89D42AB475EE00445064 /* pulp_fiction.mp4 in Resources */,
+				172B89DA2AB48FEC00445064 /* twin_peaks.mp4 in Resources */,
+				172B89DE2AB4936A00445064 /* old_boy.mp4 in Resources */,
 				173623D42AAE254000BB7F4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,10 +204,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				173623DE2AAE26C900BB7F4D /* Post.swift in Sources */,
-				173623E82AAF3A4300BB7F4D /* HelloView.swift in Sources */,
+				173623E82AAF3A4300BB7F4D /* FilmTrailerView.swift in Sources */,
+				172B89D82AB483C400445064 /* SwiftUIView.swift in Sources */,
 				173623E02AAE296800BB7F4D /* PostData.swift in Sources */,
+				17321A712AB5693600B83EF6 /* PhotoPersonView.swift in Sources */,
 				173623EA2AAF3AB900BB7F4D /* SettingView.swift in Sources */,
 				173623D22AAE253F00BB7F4D /* ContentView.swift in Sources */,
+				172B89D62AB47EA200445064 /* PersonView.swift in Sources */,
 				173623D02AAE253F00BB7F4D /* FavouriteFilmsSwiftUIApp.swift in Sources */,
 				173623E42AAE2E5600BB7F4D /* InfoDetails.swift in Sources */,
 				173623E22AAE2B4C00BB7F4D /* InfoRow.swift in Sources */,

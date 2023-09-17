@@ -11,6 +11,7 @@ struct ContentView: View {
     
     @AppStorage("TITLE_KEY") var titleOn = false
     @AppStorage("ROW_HEIGHT_KEY") var rowHeight = 60.0
+    @State var film: Film = database[0]
     
     //@State private var titleOn: Bool = true
     
@@ -18,13 +19,13 @@ struct ContentView: View {
         
         TabView {
             
-            InfoView(titleOn: $titleOn, rowHeight: $rowHeight)
+            InfoView(titleOn: $titleOn, rowHeight: $rowHeight, film: $film)
                 .tabItem {
                     Label("Info View", systemImage: "list.and.film")
                 }
-            HelloView()
+            FilmTrailerView(film: $film)
                 .tabItem {
-                    Label("HelloView", systemImage: "hand.raised.fill")
+                    Label("FilmTrailerView", systemImage: "film.fill")
                 }
             SettingView(titleOn: $titleOn, rowHeight: $rowHeight)
                 .tabItem {

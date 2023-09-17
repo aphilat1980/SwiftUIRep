@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InfoRow: View {
-    var post: Post
+    var post: Film
     
     var body: some View {
         HStack {
